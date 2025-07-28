@@ -4,7 +4,6 @@ import os
 import requests
 import logging
 import csv
-import math
 from collections import defaultdict
 
 # --- Configuration ---
@@ -131,6 +130,7 @@ def parse_shifts(plays, home_id, away_id):
         shifts[pid].append((start, final_t))
 
     return shifts
+
 
 
 def on_off_ice(shifts, t, atk_id, home_roster, away_roster, home_id):
